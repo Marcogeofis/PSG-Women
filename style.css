@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: whitesmoke;
+}
 html{
     font-size: 62.5%;
     font-family: 'Arimo', sans-serif;
@@ -35,6 +38,11 @@ header .subtitle__cards{
 }
 .name__G{
     color:#151e2d;
+}
+.logo-psg {
+    margin-top: 5px;
+    width:40px;
+    height: 40px;
 }
 .team_psg{
     display: flex;
@@ -80,7 +88,7 @@ header .subtitle__cards{
 }
 .card__skill .skill__player{
     background-color:#151e2d;
-    color: whitesmoke;
+    color: white;
     font-size: 1.8rem;
 }
 .title__position{
