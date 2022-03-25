@@ -3,6 +3,7 @@
     --azul-psg: #151e2d;
     --rojo-psg: #ff1541;
     --botones-color: #103977;
+    --home-color: #AAA492;
 }
 *{
     box-sizing: border-box;
@@ -36,7 +37,18 @@ header .subtitle__cards{
     margin-top: 15px;
 }
 .container__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 20px;
+}
+.home{
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+    color: var(--home-color);
+    
 }
 .logo-psg {
     margin: 20px;
@@ -67,6 +79,9 @@ main{
     height: 290px;
     margin-top: 40px;
 }
+a{
+    text-decoration: none;
+}
 .button{
     display: flex;
     justify-content: center;
@@ -81,9 +96,10 @@ main{
     margin: 10px 0;
     border: none;
 }
-.button a{
-    color: var(--blanco);
-    text-decoration: none;
+.button:hover{
+    background: var(--blanco);
+    color: var(--botones-color);
+
 }
 
 /* women's team */
@@ -126,7 +142,7 @@ main{
 /* footer */
 .footer__networks{
     width: 100%;
-    height: 230px;
+    height: 210px;
     background: var(--blanco);
     margin-top: 40px;
 }
@@ -148,7 +164,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .logos{
     width:50px;
