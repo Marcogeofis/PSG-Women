@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title>Biography of Player</title>
+</head>
+<body>
+    <h2 class="title_biography">Biography</h2>
+    <div class="container_biography">
+        <img class="escudo" src="https://es.psg.fr/img/logos/psg-logo.png" alt="escudo_deñ_psg">
+        <a href="../goalkeepers.html">
+                <p class="back">Back</p>
+        </a>
+        <article class="biography">
+            <figcaption>
+                <img id="imgplayer" src="" alt="Player">
+            </figcaption>
+            <div class="biography_player">
+                <p class="info">Name: <span class="name"></span></p>
+                <p class="info">Age: <span class="age"></span></p>
+                <p class="info">Country: <span class="country"></span></p>
+            </div>
+        </article>
+    </div>
+    <footer class="footer__networks">
+        <div class="about__page">
+            <p class="text1">This page was created with love and respect to all women'steam PSG</p>
+            <p class="text2">social media:</p>
+        </div>
+        <div class="container__socialmedia">
+            <figcaption>
+                <a href="">
+                    <img class="logos" src="../../../assets/github.png" alt="logo_gatito">
+                </a>
+            </figcaption>
+            <figcaption>
+                <a href="">
+                    <img class="logos" src="../../../assets/instagram.png" alt="logo_camara">
+                </a>
+            </figcaption>
+            <figcaption>
+                <a href="">
+                    <img class="logos" src="../../../assets/twitter.png" alt="logo_pajarito">
+                </a>
+            </figcaption>
+        </div>
+    </footer>
+    <script>
+        const goalkeepers = [{},
+    {
+        id: "p002",
+        Posicion: "Guardameta",
+        Name: "Constance Picaud",
+        Edad: 23,
+        País: "Francia",
+        Imagen: "https://images.psg.media/media/209652/hero-picaud.png?anchor=center&mode=crop&width=800&height=800&quality=80",
+    },
+    {
+        id: "p003",
+        Posicion: "Guardameta",
+        Name: "Barbora Votíková",
+        Edad: 25,
+        País: "República Checa",
+        Imagen: "https://images.psg.media/media/209856/hero_21-22_votikova.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+    },
+    {
+        id: "p004",
+        Posicion: "Guardameta",
+        Name: "Charlotte Voll",
+        Edad: 22,
+        País: "Alemania",
+        Imagen: "https://images.psg.media/media/186170/hero_21-22_voll.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+    },
+];
+
+let index = 1;
+function goalKeepers(el){
+    let nombre = document.querySelector('.name');
+    let edad = document.querySelector('.age');
+    let pais = document.querySelector('.country');
+    let player = document.querySelector('#imgplayer')
+  
+    player.src = goalkeepers[el].Imagen;
+    nombre.innerHTML = goalkeepers[el].Name;
+    edad.innerHTML = goalkeepers[el].Edad;
+    pais.innerHTML = goalkeepers[el].País;
+    
+}
+goalKeepers(index)
+
+    </script>
+</body>
+</html>

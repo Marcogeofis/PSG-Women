@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title>Biography of Player</title>
+</head>
+<body>
+    <h2 class="title_biography">Biography</h2>
+    <div class="container_biography">
+        <img class="escudo" src="https://es.psg.fr/img/logos/psg-logo.png" alt="escudo_deñ_psg">
+        <a href="../midfielders.html">
+                <p class="back">Back</p>
+        </a>
+        <article class="biography">
+            <figcaption>
+                <img id="imgplayer" src="" alt="Player">
+            </figcaption>
+            <div class="biography_player">
+                <p class="info">Name: <span class="name"></span></p>
+                <p class="info">Age: <span class="age"></span></p>
+                <p class="info">Country: <span class="country"></span></p>
+            </div>
+        </article>
+    </div>
+    <footer class="footer__networks">
+        <div class="about__page">
+            <p class="text1">This page was created with love and respect to all women'steam PSG</p>
+            <p class="text2">social media:</p>
+        </div>
+        <div class="container__socialmedia">
+            <figcaption>
+                <a href="">
+                    <img class="logos" src="../../../assets/github.png" alt="logo_gatito">
+                </a>
+            </figcaption>
+            <figcaption>
+                <a href="">
+                    <img class="logos" src="../../../assets/instagram.png" alt="logo_camara">
+                </a>
+            </figcaption>
+            <figcaption>
+                <a href="">
+                    <img class="logos" src="../../../assets/twitter.png" alt="logo_pajarito">
+                </a>
+            </figcaption>
+        </div>
+    </footer>
+    <script>
+        const midfielders = [{
+    id: "med001",
+    Posicion: "Medio Campista",
+    Name: "Luana",
+    Edad: 28,
+    País: "Brasil",
+    Imagen: "https://images.psg.media/media/181770/hero_luana_21-22.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "med002",
+    Posicion: "Medio Campista",
+    Name: "Grace Geyoro",
+    Edad: 24,
+    País: "Francia",
+    Imagen: "https://images.psg.media/media/30585/hero_21-22_geyoro.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "med003",
+    Posicion: "Medio Campista",
+    Name: "Sara Däbritz",
+    Edad: 26,
+    País: "Alemania",
+    Imagen: "https://images.psg.media/media/30590/hero_21-22_dabritz.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "med004",
+    Posicion: "Medio Campista",
+    Name: "Kheira Hamraoui",
+    Edad: 31,
+    País: "Francia",
+    Imagen: "https://images.psg.media/media/209668/hero_21-22_hamraoui.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "med005",
+    Posicion: "Medio Campista",
+    Name: "Laurina Fazer",
+    Edad: 18,
+    País: "Francia",
+    Imagen: "https://images.psg.media/media/186162/hero_21-22_fazer.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "med006",
+    Posicion: "Medio Campista",
+    Name: "Aminata Diallo",
+    Edad: 26,
+    País: "Francia",
+    Imagen: "https://images.psg.media/media/207850/hero_21-22_diallo.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "med007",
+    Posicion: "Medio Campista",
+    Name: "Sandy Baltimore",
+    Edad: 21,
+    País: "Francia",
+    Imagen: "https://images.psg.media/media/30598/hero_21-22_baltimore.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "med008",
+    Posicion: "Medio Campista",
+    Name: "Léa Khelifi ",
+    Edad: 22,
+    País: "Francia",
+    Imagen: "https://images.psg.media/media/30601/hero_21-22_khelifi2.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  }
+];
+
+let index = 1;
+function midFielders(el){
+    let nombre = document.querySelector('.name');
+    let edad = document.querySelector('.age');
+    let pais = document.querySelector('.country');
+    let player = document.querySelector('#imgplayer')
+  
+    player.src = midfielders[el].Imagen;
+    nombre.innerHTML = midfielders[el].Name;
+    edad.innerHTML = midfielders[el].Edad;
+    pais.innerHTML = midfielders[el].País;
+    
+}
+midFielders(index)
+
+    </script>
+
+</body>
+</html>

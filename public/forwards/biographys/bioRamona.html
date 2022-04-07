@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title>Biography of Player</title>
+</head>
+<body>
+    <h2 class="title_biography">Biography</h2>
+    <div class="container_biography">
+        <img class="escudo" src="https://es.psg.fr/img/logos/psg-logo.png" alt="escudo_deñ_psg">
+        <a href="../forwards.html">
+                <p class="back">Back</p>
+        </a>
+        <article class="biography">
+            <figcaption>
+                <img id="imgplayer" src="" alt="Player">
+            </figcaption>
+            <div class="biography_player">
+                <p class="info">Name: <span class="name"></span></p>
+                <p class="info">Age: <span class="age"></span></p>
+                <p class="info">Country: <span class="country"></span></p>
+            </div>
+        </article>
+    </div>
+    <footer class="footer__networks">
+        <div class="about__page">
+            <p class="text1">This page was created with love and respect to all women'steam PSG</p>
+            <p class="text2">social media:</p>
+        </div>
+        <div class="container__socialmedia">
+            <figcaption>
+                <a href="">
+                    <img class="logos" src="../../../assets/github.png" alt="logo_gatito">
+                </a>
+            </figcaption>
+            <figcaption>
+                <a href="">
+                    <img class="logos" src="../../../assets/instagram.png" alt="logo_camara">
+                </a>
+            </figcaption>
+            <figcaption>
+                <a href="">
+                    <img class="logos" src="../../../assets/twitter.png" alt="logo_pajarito">
+                </a>
+            </figcaption>
+        </div>
+    </footer>
+    <script>
+        const forwards = [{
+    id: "del001",
+    Posicion: "Delantera",
+    Name: "Marie-Antoinette",
+    Edad: 23,
+    País: "Francia",
+    Imagen: "https://images.psg.media/media/30586/hero_21-22_katoto.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "del002",
+    Posicion: "Delantera",
+    Name: "Ramona Bachmann",
+    Edad: 31,
+    País: "Suecia",
+    Imagen: "https://images.psg.media/media/186167/hero_21-22_bachmann.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "del003",
+    Posicion: "Delantera",
+    Name: "kadidiatou Diani",
+    Edad: 26,
+    País: "Francia",
+    Imagen: "https://images.psg.media/media/30588/hero_21-22_diani.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "del004",
+    Posicion: "Delantera",
+    Name: "Celin Bizet Iidhusoy",
+    Edad: 20,
+    País: "Noruega",
+    Imagen: "https://images.psg.media/media/207853/hero_21-22_bizet.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+  {
+    id: "del005",
+    Posicion: "Delantera",
+    Name: "Jordyn Huitema",
+    Edad: 20,
+    País: "Canada",
+    Imagen: "https://images.psg.media/media/30599/hero_21-22_huitema.png?center=0.5,0.5&mode=crop&width=800&height=800&quality=80",
+  },
+];
+
+let index = 1;
+
+function forWards(el){
+    let nombre = document.querySelector('.name');
+    let edad = document.querySelector('.age');
+    let pais = document.querySelector('.country');
+    let player = document.querySelector('#imgplayer')
+  
+    player.src = forwards[el].Imagen;
+    nombre.innerHTML = forwards[el].Name;
+    edad.innerHTML = forwards[el].Edad;
+    pais.innerHTML = forwards[el].País;
+
+}
+forWards(index)
+
+    </script>
+
+</body>
+</html>
