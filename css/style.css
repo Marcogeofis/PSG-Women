@@ -144,6 +144,7 @@ a{
     text-align: center;
     padding-block-start: 50px;
     font-size: 2.5rem;
+    color: var(--blanco)
 }
 .container_biography{
     display: flex;
@@ -163,7 +164,7 @@ a{
 .back{
     margin-block-start: 10px;
     color: var(--home-color);
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 #imgplayer{
     margin-top: 70px;
