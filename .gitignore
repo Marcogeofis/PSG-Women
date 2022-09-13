@@ -102,6 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+<<<<<<< HEAD
 
 BD_tarjetas
 
+=======
+>>>>>>> 7793fe85ae6a7643e454d3b1b2b85e12fc17075e
