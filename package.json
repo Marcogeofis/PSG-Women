@@ -1,0 +1,20 @@
+{
+  "name": "tarjetas_psg_femenil",
+  "version": "1.0.0",
+  "description": "This is a proyect about women's team PSG",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcogeofis/PSG_women-s_cards-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcogeofis/PSG_women-s_cards-/issues"
+  },
+  "homepage": "https://github.com/Marcogeofis/PSG_women-s_cards-#readme"
+}
